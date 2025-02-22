@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="duck_hunt.scoreController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@UI/score_screen.png" />
+         </image></ImageView>
+      <ImageView fx:id="dog" fitHeight="407.0" fitWidth="358.0" layoutX="56.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@UI/goodscoredog.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="textScore" fill="WHITE" layoutX="472.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="0" textAlignment="CENTER" wrappingWidth="202.4375">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="saveHint" fill="WHITE" layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="SAVE?" textAlignment="CENTER" visible="false" wrappingWidth="246.4375">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Text>
+      <Button fx:id="yesButton" layoutX="28.0" layoutY="83.0" mnemonicParsing="false" onAction="#openPopWindow" prefHeight="65.0" prefWidth="109.0" text="YES" visible="false" />
+      <Button fx:id="noButton" layoutX="137.0" layoutY="83.0" mnemonicParsing="false" onAction="#goBack" text="NO" visible="false" />
+      <Pane fx:id="duckPile" layoutX="718.0" prefHeight="561.0" prefWidth="488.0" />
+   </children>
+</Pane>
