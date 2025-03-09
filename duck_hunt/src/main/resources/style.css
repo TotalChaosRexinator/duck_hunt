@@ -1,0 +1,26 @@
+ /** @font-face {
+    font-family: Duck Hunt;
+    src: url('../classes/fonts/duckhunt.ttf');
+}
+
+.button
+{
+	-fx-font-family: 'Duck Hunt';
+	-fx-background-color: transparent;
+	    -fx-border-color: transparent; 
+		-fx-text-fill: white;
+		 -fx-font-size: 25pt ;
+}
+.text
+{
+	-fx-font-family: 'Duck Hunt';
+	-fx-background-color: transparent;
+	    -fx-border-color: transparent; 
+		-fx-text-fill: white;
+}
+.text-field {
+    -fx-font-family: 'Duck Hunt';
+    -fx-background-color: transparent;
+    -fx-border-color: transparent; 
+    -fx-text-fill: white;
+} **/
